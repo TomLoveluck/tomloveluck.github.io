@@ -1,1 +1,232 @@
-<meta HTTP-EQUIV="REFRESH" content="0; url=CV.pdf">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tom Loveluck — Senior Data Science & AI Consultant</title>
+  <meta name="description" content="Senior data scientist and technical leader delivering machine learning, analytics, data engineering and AI capability in large-scale enterprise environments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text-primary: #1a1a18;
+      --text-secondary: #5f5e5a;
+      --text-muted: #888780;
+      --text-accent: #185fa5;
+      --surface-0: #f1efe8;
+      --surface-1: #f8f7f3;
+      --surface-2: #ffffff;
+      --border: rgba(0,0,0,0.1);
+      --border-accent: #85b7eb;
+      --bg-accent: #e6f1fb;
+      --fill-accent: #185fa5;
+      --on-accent: #ffffff;
+      --radius: 8px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-primary);
+      background: var(--surface-0);
+      padding: 2rem 1rem;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface-2);
+      border-radius: 16px;
+      border: 0.5px solid var(--border);
+      padding: 2.5rem 1.25rem 3rem;
+    }
+
+    /* Hero */
+    .hero { padding-bottom: 2rem; border-bottom: 0.5px solid var(--border); }
+    .hero-top { display: flex; align-items: center; gap: 16px; margin-bottom: 1.25rem; }
+    .initials {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--bg-accent); color: var(--text-accent);
+      font-size: 18px; font-weight: 500;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .name { font-size: 22px; font-weight: 500; line-height: 1.2; }
+    .job-title { font-size: 15px; color: var(--text-secondary); margin-top: 4px; }
+
+    /* Tech pills */
+    .pills { display: flex; flex-wrap: wrap; gap: 4px; }
+    .pill {
+      display: inline-block;
+      background: var(--surface-1); border: 0.5px solid var(--border);
+      border-radius: var(--radius); padding: 4px 12px;
+      font-size: 13px; color: var(--text-secondary);
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 12px; font-weight: 500; color: var(--text-muted);
+      letter-spacing: .06em; text-transform: uppercase;
+      margin-top: 2rem; margin-bottom: 1rem;
+    }
+
+    /* About */
+    .overview { font-size: 15px; color: var(--text-secondary); margin-bottom: .75rem; }
+    .help-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: .75rem; }
+    .help-item { display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: var(--text-secondary); }
+    .help-icon { color: var(--text-accent); font-size: 16px; margin-top: 4px; flex-shrink: 0; }
+
+    /* Services */
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+    .service-card {
+      background: var(--surface-1); border: 0.5px solid var(--border);
+      border-radius: 12px; padding: 1rem 1.25rem;
+    }
+    .service-title { font-size: 14px; font-weight: 500; margin-bottom: .5rem; }
+    .service-items { list-style: none; font-size: 13px; color: var(--text-secondary); }
+    .service-items li { padding: 2px 0; }
+    .service-items li::before { content: "–"; margin-right: 6px; color: var(--text-muted); }
+
+    /* Engagements */
+    .engagements { display: flex; flex-wrap: wrap; gap: 8px; }
+    .eng-badge {
+      background: var(--surface-1); border: 0.5px solid var(--border);
+      border-radius: var(--radius); padding: 6px 14px;
+      font-size: 13px; color: var(--text-secondary);
+    }
+
+    /* CTA */
+    .cta-bar {
+      margin-top: 2rem; padding: 1.25rem 1.5rem;
+      background: var(--bg-accent); border: 0.5px solid var(--border-accent);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .cta-text { font-size: 14px; color: var(--text-accent); font-weight: 500; }
+    .cta-sub { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+    .cta-btn {
+      background: var(--fill-accent); color: var(--on-accent);
+      border: none; border-radius: var(--radius);
+      padding: 8px 18px; font-size: 14px; font-weight: 500;
+      cursor: pointer; text-decoration: none; display: inline-block;
+    }
+    .cta-btn:hover { background: #0c447c; }
+
+    @media (max-width: 600px) {
+      .page { padding: 1.5rem 1.25rem 2rem; }
+      .cta-bar { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="hero">
+      <div class="hero-top">
+        <img src="https://i.imgur.com/QoDuSjy.png" alt="Tom Loveluck" style="width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;" />
+        <div>
+          <div class="name">Tom Loveluck</div>
+          <div class="job-title">Senior data science &amp; AI consultant</div>
+        </div>
+      </div>
+      <div class="pills">
+        <span class="pill">Python</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Machine learning</span>
+        <span class="pill">Data pipelines</span>
+        <span class="pill">Cloud platforms</span>
+        <span class="pill">Dashboards</span>
+        <span class="pill">GenAI</span>
+        <span class="pill">RAG</span>
+        <span class="pill">Analytics engineering</span>
+        <span class="pill">MLOps</span>
+      </div>
+    </div>
+
+    <div class="section-label">About</div>
+    <p class="overview">Senior data scientist and technical leader with experience delivering machine learning, analytics, data engineering and AI capability in large-scale enterprise environments. Background includes leadership in banking and enterprise data science.</p>
+    <div class="help-grid">
+      <div class="help-item"><span class="help-icon">&#9632;</span>Build practical data products</div>
+      <div class="help-item"><span class="help-icon">&#9632;</span>Automate reporting &amp; operations</div>
+      <div class="help-item"><span class="help-icon">&#9632;</span>Design scalable ML platforms</div>
+      <div class="help-item"><span class="help-icon">&#9632;</span>Develop decision-support dashboards</div>
+      <div class="help-item"><span class="help-icon">&#9632;</span>Establish reliable data pipelines</div>
+      <div class="help-item"><span class="help-icon">&#9632;</span>Translate business problems into solutions</div>
+    </div>
+
+    <div class="section-label">Services</div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-title">Data science &amp; modelling</div>
+        <ul class="service-items">
+          <li>Forecasting, regression &amp; classification</li>
+          <li>Customer analytics</li>
+          <li>Experimentation / A/B analysis</li>
+          <li>Statistical analysis</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-title">Data engineering</div>
+        <ul class="service-items">
+          <li>Data ingestion workflows</li>
+          <li>Transformation &amp; orchestration</li>
+          <li>Pipeline reliability &amp; monitoring</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-title">Dashboards &amp; analytics</div>
+        <ul class="service-items">
+          <li>Executive dashboards</li>
+          <li>Self-service BI enablement</li>
+          <li>Data visualisation</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-title">ML platforms &amp; MLOps</div>
+        <ul class="service-items">
+          <li>ML platform strategy</li>
+          <li>Governance &amp; monitoring</li>
+          <li>Productionisation consulting</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-title">AI / GenAI advisory</div>
+        <ul class="service-items">
+          <li>RAG architectures</li>
+          <li>LLM workflow design</li>
+          <li>AI use-case assessment</li>
+          <li>Prompt engineering approaches</li>
+          <li>Responsible AI considerations</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-label">Engagement models</div>
+    <div class="engagements">
+      <span class="eng-badge">Fractional consulting</span>
+      <span class="eng-badge">Advisory retainers</span>
+      <span class="eng-badge">Short technical projects</span>
+      <span class="eng-badge">Architecture reviews</span>
+      <span class="eng-badge">Build / implementation support</span>
+      <span class="eng-badge">Team mentoring</span>
+    </div>
+
+    <div class="cta-bar">
+      <div>
+        <div class="cta-text">Let's work together</div>
+        <div class="cta-sub">Open to new engagements — get in touch to discuss your needs</div>
+      </div>
+      <!-- Replace href with your email or contact page -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <a href="https://www.linkedin.com/in/tom-loveluck-02168b86/" target="_blank" rel="noopener" class="cta-btn" style="background:var(--surface-2);color:var(--text-accent);border:0.5px solid var(--border-accent);">LinkedIn</a>
+        <a href="mailto:tom@example.com" class="cta-btn">Get in touch</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
